@@ -6,6 +6,7 @@ class Welcome extends Application {
 
 	public function index()
 	{
+            /*
 		$result = '';
 		$oddrow = true;
 		foreach ($this->categories->all() as $category)
@@ -18,8 +19,11 @@ class Welcome extends Application {
 			$result .= $this->parser->parse('category-home', $category, true);
 			$oddrow = ! $oddrow;
 		}
+             */
+                $result = "This is not the webpage you're loooking for";
 		$this->data['content'] = $result;
 		$this->render();
 	}
+        
 
 }
