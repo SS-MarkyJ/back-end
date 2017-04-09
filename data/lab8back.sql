@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2017 at 08:51 PM
+-- Generation Time: Apr 09, 2017 at 09:51 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -19,31 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `lab8back`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `ci_sessions`
---
-
-CREATE TABLE `ci_sessions` (
-  `id` varchar(128) NOT NULL,
-  `ip_address` varchar(45) NOT NULL,
-  `timestamp` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `data` blob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `ci_sessions`
---
-
-INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
-('9bd03dee0f4dc3cca5a6a56da64abe2757b3baeb', '127.0.0.1', 1491515147, 0x5f5f63695f6c6173745f726567656e65726174657c693a313439313531343939363b),
-('a7aed987a979ff0ece54f7661a0664944ec5eba5', '127.0.0.1', 1491516872, 0x5f5f63695f6c6173745f726567656e65726174657c693a313439313531363837323b),
-('01a1b3eb21618f0e3813689f9c0f32888a07f968', '127.0.0.1', 1491762143, 0x5f5f63695f6c6173745f726567656e65726174657c693a313439313736313838313b),
-('52ed9f985b4c37459fde6169f6b42f7244b6a750', '127.0.0.1', 1491762633, 0x5f5f63695f6c6173745f726567656e65726174657c693a313439313736323436323b),
-('bc580dc36214b2ab882519a06affa9f58f8b9efc', '127.0.0.1', 1491763300, 0x5f5f63695f6c6173745f726567656e65726174657c693a313439313736333034303b),
-('9a1fe762bf9434e08446fea6eb406d05fa6d7874', '127.0.0.1', 1491763477, 0x5f5f63695f6c6173745f726567656e65726174657c693a313439313736333338303b);
 
 -- --------------------------------------------------------
 
@@ -77,12 +52,6 @@ INSERT INTO `menu` (`id`, `name`, `description`, `price`, `picture`, `category`)
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `ci_sessions`
---
-ALTER TABLE `ci_sessions`
-  ADD KEY `ci_sessions_timestamp` (`timestamp`);
 
 --
 -- Indexes for table `menu`
